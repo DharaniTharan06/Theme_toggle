@@ -1,3 +1,5 @@
 import Login from "./Login";
 import Profile from "./Profile";
-export {Login, Profile}
+import Card from "./Card";
+import Themebtn from "./Themebtn";
+export {Login, Profile, Card, Themebtn}
