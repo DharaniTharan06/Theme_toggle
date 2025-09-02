@@ -1,15 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState , createContext , useContext} from 'react'
 import './App.css'
+import UserContextProvider from './Context/UserContextProvider'
+import { Login } from './Components'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [theme, setTheme] = useState("Dark")
 
   return (
-    <>
+    <UserContextProvider>z
       <h1 className='bg-green-600 rounded-lg'>Toggle Theme!</h1>
-    </>
+    </UserContextProvider>
   )
 }
 
