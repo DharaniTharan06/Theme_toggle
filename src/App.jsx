@@ -7,11 +7,13 @@ function App() {
   const [theme, setTheme] = useState("Dark")
 
   return (
-    <UserContextProvider>
-      <h1 className='bg-green-600 rounded-lg'>Toggle Theme!</h1>
-      <Login />
-      <Profile />
-    </UserContextProvider>
+    <div>
+      <UserContextProvider>
+        <h1 className='bg-green-600 rounded-lg'>Toggle Theme!</h1>
+        <Login/>
+        <Profile/>
+      </UserContextProvider>
+    </div>
   )
 }
 
